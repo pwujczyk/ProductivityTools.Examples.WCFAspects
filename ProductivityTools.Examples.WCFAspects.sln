@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{410F93D4-5EEF-4E70-B2BC-6F52047DFC6E}"
+	ProjectSection(SolutionItems) = preProject
+		MD.txt = MD.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityTools.Examples.WCFAspects.Client", "src\ProductivityTools.Examples.WCFAspects.Client\ProductivityTools.Examples.WCFAspects.Client.csproj", "{51688D60-E210-4F50-A3B9-F2229387CCE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityTools.Examples.WCFAspects.Common", "src\ProductivityTools.Examples.WCFAspects.Common\ProductivityTools.Examples.WCFAspects.Common.csproj", "{B4ED97B2-582E-4F3C-A009-2B250D39C907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityTools.Examples.WCFAspects.Contract", "src\ProductivityTools.Examples.WCFAspects.Contract\ProductivityTools.Examples.WCFAspects.Contract.csproj", "{7D502359-42FC-4F0F-BC8A-CFA48FEBEC13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityTools.Examples.WCFAspects.Server", "src\ProductivityTools.Examples.WCFAspects.Server\ProductivityTools.Examples.WCFAspects.Server.csproj", "{1D4E2C24-82CB-48DD-A0B7-A9D6610055C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityTools.Examples.WCFAspects.Service", "src\ProductivityTools.Examples.WCFAspects.Service\ProductivityTools.Examples.WCFAspects.Service.csproj", "{A1F5A0F3-57D2-4BDD-847D-CA5674174966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51688D60-E210-4F50-A3B9-F2229387CCE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51688D60-E210-4F50-A3B9-F2229387CCE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51688D60-E210-4F50-A3B9-F2229387CCE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51688D60-E210-4F50-A3B9-F2229387CCE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4ED97B2-582E-4F3C-A009-2B250D39C907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4ED97B2-582E-4F3C-A009-2B250D39C907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4ED97B2-582E-4F3C-A009-2B250D39C907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4ED97B2-582E-4F3C-A009-2B250D39C907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D502359-42FC-4F0F-BC8A-CFA48FEBEC13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D502359-42FC-4F0F-BC8A-CFA48FEBEC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D502359-42FC-4F0F-BC8A-CFA48FEBEC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D502359-42FC-4F0F-BC8A-CFA48FEBEC13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4E2C24-82CB-48DD-A0B7-A9D6610055C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4E2C24-82CB-48DD-A0B7-A9D6610055C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4E2C24-82CB-48DD-A0B7-A9D6610055C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4E2C24-82CB-48DD-A0B7-A9D6610055C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F5A0F3-57D2-4BDD-847D-CA5674174966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F5A0F3-57D2-4BDD-847D-CA5674174966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F5A0F3-57D2-4BDD-847D-CA5674174966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F5A0F3-57D2-4BDD-847D-CA5674174966}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D431A3F9-0615-408B-9B8A-ADCB216F3D5C}
+	EndGlobalSection
+EndGlobal

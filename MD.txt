@@ -1,0 +1,4 @@
+IServiceBehavior: Applies to the entire service
+IEndpointBehavior: Applies to a specific endpoint
+IContractBehavior: Applies to a specific contract
+IOperationBehavior : Applies to a specific operation
