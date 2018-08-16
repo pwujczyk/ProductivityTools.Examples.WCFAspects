@@ -4,21 +4,21 @@ using System.Runtime.Serialization;
 namespace ProductivityTools.Examples.WCFAspects.Contract
 {
     [Serializable]
-    internal class OnyNetTcpException : Exception
+    internal class OnlyNetTcpException : Exception
     {
-        public OnyNetTcpException()
+        public OnlyNetTcpException()
         {
         }
 
-        public OnyNetTcpException(string message) : base(message)
+        public OnlyNetTcpException(string message) : base(message)
         {
         }
 
-        public OnyNetTcpException(string message, Exception innerException) : base(message, innerException)
+        public OnlyNetTcpException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
-        protected OnyNetTcpException(SerializationInfo info, StreamingContext context) : base(info, context)
+        protected OnlyNetTcpException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
     }
