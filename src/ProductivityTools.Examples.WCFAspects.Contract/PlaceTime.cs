@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProductivityTools.Examples.WCFAspects.Contract
 {
-    public class WcfAllowedAttribute : Attribute
+    public class PlaceTime
     {
+        public string City { get; set; }
+        public DateTime DateTime { get; set; }
     }
 }

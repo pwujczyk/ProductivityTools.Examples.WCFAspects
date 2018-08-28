@@ -7,17 +7,11 @@ using System.Threading.Tasks;
 
 namespace ProductivityTools.Examples.WCFAspects.Service
 {
-    [CustomServiceBehavior]
     public class CustomService : ICustomContract
     {
-        public string Method1(string s)
+        public PlaceTime Method1()
         {
-            return s;
-        }
-
-        public string Method2(string s)
-        {
-            return s;
+            return new PlaceTime { City = "Warsaw", DateTime = DateTime.Now };
         }
     }
 }

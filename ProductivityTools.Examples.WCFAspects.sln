@@ -8,8 +8,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		MD.txt = MD.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityTools.Examples.WCFAspects.Client", "src\ProductivityTools.Examples.WCFAspects.Client\ProductivityTools.Examples.WCFAspects.Client.csproj", "{51688D60-E210-4F50-A3B9-F2229387CCE5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityTools.Examples.WCFAspects.Common", "src\ProductivityTools.Examples.WCFAspects.Common\ProductivityTools.Examples.WCFAspects.Common.csproj", "{B4ED97B2-582E-4F3C-A009-2B250D39C907}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityTools.Examples.WCFAspects.Contract", "src\ProductivityTools.Examples.WCFAspects.Contract\ProductivityTools.Examples.WCFAspects.Contract.csproj", "{7D502359-42FC-4F0F-BC8A-CFA48FEBEC13}"
@@ -24,10 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{51688D60-E210-4F50-A3B9-F2229387CCE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51688D60-E210-4F50-A3B9-F2229387CCE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51688D60-E210-4F50-A3B9-F2229387CCE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51688D60-E210-4F50-A3B9-F2229387CCE5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B4ED97B2-582E-4F3C-A009-2B250D39C907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B4ED97B2-582E-4F3C-A009-2B250D39C907}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4ED97B2-582E-4F3C-A009-2B250D39C907}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -32,13 +32,10 @@ namespace ProductivityTools.Examples.WCFAspects.Client
         static void Main(string[] args)
         {
             ChannelFactory<ICustomContract> netTcpFactory = new ChannelFactory<ICustomContract>(new NetTcpBinding(), Consts.NetTcpAddress);
-            netTcpFactory.Endpoint.Behaviors.Add(new CustomEndpointBehavior("client"));
             ICustomContract netTcpProxy = netTcpFactory.CreateChannel();
-            TryInvoke(()=>netTcpProxy.Method1("Hello 1 - net tcp"));
-            TryInvoke(() => netTcpProxy.Method2("Hello 2 - net tcp"));
+            netTcpProxy.Method1(DateTime.Now);
 
             ChannelFactory<ICustomContract> webHttpFactory = new ChannelFactory<ICustomContract>(new WebHttpBinding(), Consts.WebHttpAddress);
-            webHttpFactory.Endpoint.Behaviors.Add(new CustomEndpointBehavior("client"));
             webHttpFactory.Endpoint.Behaviors.Add(new WebHttpBehavior());
             ICustomContract webHttpProxy = webHttpFactory.CreateChannel();
             TryInvoke(() => webHttpProxy.Method1("Hello 1 - web http"));

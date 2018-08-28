@@ -1,4 +1,6 @@
 ﻿using ProductivityTools.Examples.WCFAspects.Contract;
+using ProductivityTools.Examples.WCFAspects.Server.ClientJsonDateFormatter;
+using ProductivityTools.Examples.WCFAspects.Server.JsonFormatter;
 using ProductivityTools.Examples.WCFAspects.Service;
 using ProductivityTools.ExamplesWcfAspects.Common;
 using System;
@@ -26,9 +28,12 @@ namespace ProductivityTools.Examples.WCFAspects.Server
             {
                 if (endpoint.Address.Uri.Scheme.StartsWith("http"))
                 {
-                    endpoint.Behaviors.Add(new WebHttpBehavior());
+                    //endpoint.Behaviors.Add(new DateTimeJsonBehavior());
+                    endpoint.Contract.Operations.Find("Method1").Behaviors.Add(new MyOperationBehavior());
+                    var x = new WebHttpBehavior();
+                    x.DefaultOutgoingRequestFormat = WebMessageFormat.Json;
+                    endpoint.Behaviors.Add(x);
                 }
-                endpoint.Behaviors.Add(new CustomEndpointBehavior("server"));
             }
 
             host.Open();
