@@ -48,10 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientJsonDateFormatter\Client.cs" />
-    <Compile Include="JsonFormatter\DateTimeJsonBehavior.cs" />
+    <Compile Include="JsonFormatter\Client.cs" />
     <Compile Include="JsonFormatter\DateTimeJsonFormatter.cs" />
-    <Compile Include="JsonFormatter\DateWriter.cs" />
+    <Compile Include="JsonFormatter\JsonDataWriter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

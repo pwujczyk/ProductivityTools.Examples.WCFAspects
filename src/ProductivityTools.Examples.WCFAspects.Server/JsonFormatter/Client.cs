@@ -8,22 +8,9 @@ using System.ServiceModel.Dispatcher;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductivityTools.Examples.WCFAspects.Server.ClientJsonDateFormatter
-{
-
-    public class MyClientFormatter : IClientMessageFormatter
-    {
-        public object DeserializeReply(Message message, object[] parameters)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Message SerializeRequest(MessageVersion messageVersion, object[] parameters)
-        {
-            throw new NotImplementedException();
-        }
-    }
-    public class MyOperationBehavior : IOperationBehavior
+namespace ProductivityTools.Examples.WCFAspects.Server.JsonFormatter
+{ 
+    public class ClientJsonDateFormatter : IOperationBehavior
     {
         public void AddBindingParameters(OperationDescription operationDescription, BindingParameterCollection bindingParameters)
         {
@@ -32,13 +19,11 @@ namespace ProductivityTools.Examples.WCFAspects.Server.ClientJsonDateFormatter
 
         public void ApplyClientBehavior(OperationDescription operationDescription, ClientOperation clientOperation)
         {
-            clientOperation.Formatter = new MyClientFormatter();
         }
 
         public void ApplyDispatchBehavior(OperationDescription operationDescription, DispatchOperation dispatchOperation)
         {
-            dispatchOperation.Formatter = new DateTimeJsonFormatter(operationDescription);
-          //  throw new NotImplementedException();
+            dispatchOperation.Formatter = new ResponseJsonFormatter(operationDescription);
         }
 
         public void Validate(OperationDescription operationDescription)
