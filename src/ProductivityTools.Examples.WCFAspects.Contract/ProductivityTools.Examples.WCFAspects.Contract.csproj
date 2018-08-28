@@ -42,14 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomEndpointBehavior\ClientMessageInspector.cs" />
-    <Compile Include="CustomServiceBehavior\DispatchMessageInspector.cs" />
-    <Compile Include="CustomEndpointBehavior\CustomEndpointBehavior.cs" />
-    <Compile Include="CustomServiceBehavior\OnyNetTcpException.cs" />
     <Compile Include="ICustomContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CustomServiceBehavior\CustomServiceBehavior.cs" />
-    <Compile Include="WebApiAllowed.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProductivityTools.Examples.WCFAspects.Common\ProductivityTools.Examples.WCFAspects.Common.csproj">

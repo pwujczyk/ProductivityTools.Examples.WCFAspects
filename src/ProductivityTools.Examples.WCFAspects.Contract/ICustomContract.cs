@@ -13,7 +13,6 @@ namespace ProductivityTools.Examples.WCFAspects.Contract
     {
         [OperationContract]
         [WebGet]
-        [WcfAllowed]
         string Method1(string s);
 
         [OperationContract]

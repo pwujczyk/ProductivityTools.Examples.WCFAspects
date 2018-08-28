@@ -28,7 +28,6 @@ namespace ProductivityTools.Examples.WCFAspects.Server
                 {
                     endpoint.Behaviors.Add(new WebHttpBehavior());
                 }
-                endpoint.Behaviors.Add(new CustomEndpointBehavior("server"));
             }
 
             host.Open();

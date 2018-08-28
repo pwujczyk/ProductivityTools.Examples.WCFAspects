@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace ProductivityTools.Examples.WCFAspects.Service
 {
-    [CustomServiceBehavior]
     public class CustomService : ICustomContract
     {
         public string Method1(string s)
