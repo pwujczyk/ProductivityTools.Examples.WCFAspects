@@ -12,7 +12,7 @@ namespace ProductivityTools.Examples.WCFAspects.Contract
     public interface ICustomContract
     {
         [OperationContract]
-        [WebGet]
-        PlaceTime Method1();
+        [WebGet(UriTemplate = "Method1?dt={dt}")]
+        PlaceTime Method1(DateTime dt);
     }
 }

@@ -9,9 +9,9 @@ namespace ProductivityTools.Examples.WCFAspects.Service
 {
     public class CustomService : ICustomContract
     {
-        public PlaceTime Method1()
+        public PlaceTime Method1(DateTime dt)
         {
-            return new PlaceTime { City = "Warsaw", DateTime = DateTime.Now };
+            return new PlaceTime { City = "Warsaw", DateTime = dt };
         }
     }
 }

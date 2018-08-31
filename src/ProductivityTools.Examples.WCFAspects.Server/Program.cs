@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Description;
+using System.ServiceModel.Dispatcher;
 using System.ServiceModel.Web;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,11 +25,12 @@ namespace ProductivityTools.Examples.WCFAspects.Server
 
             foreach (var endpoint in host.Description.Endpoints)
             {
+               
                 if (endpoint.Address.Uri.Scheme.StartsWith("http"))
                 {
                     foreach (var operation in endpoint.Contract.Operations)
                     {
-                       operation.OperationBehaviors.Add(new ClientJsonDateFormatter());
+                        operation.OperationBehaviors.Add(new ClientJsonDateFormatter());
                     }
                     endpoint.Behaviors.Add(new WebHttpBehavior());
                 }

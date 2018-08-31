@@ -12,14 +12,17 @@ namespace ProductivityTools.Examples.WCFAspects.Server.JsonFormatter
 {
     public class ResponseJsonFormatter : IDispatchMessageFormatter
     {
+        IDispatchMessageFormatter basicDispatchMessageFormatter;
         OperationDescription Operation;
-        public ResponseJsonFormatter(OperationDescription operation)
+        public ResponseJsonFormatter(OperationDescription operation, IDispatchMessageFormatter inner)
         {
             this.Operation = operation;
+            this.basicDispatchMessageFormatter = inner;
         }
 
         public void DeserializeRequest(Message message, object[] parameters)
         {
+            basicDispatchMessageFormatter.DeserializeRequest(message, parameters);
         }
 
         public Message SerializeReply(MessageVersion messageVersion, object[] parameters, object result)

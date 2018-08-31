@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ProductivityTools.Examples.WCFAspects.Server.JsonFormatter
-{ 
+{
     public class ClientJsonDateFormatter : IOperationBehavior
     {
         public void AddBindingParameters(OperationDescription operationDescription, BindingParameterCollection bindingParameters)
@@ -23,7 +23,7 @@ namespace ProductivityTools.Examples.WCFAspects.Server.JsonFormatter
 
         public void ApplyDispatchBehavior(OperationDescription operationDescription, DispatchOperation dispatchOperation)
         {
-            dispatchOperation.Formatter = new ResponseJsonFormatter(operationDescription);
+            dispatchOperation.Formatter = new ResponseJsonFormatter(operationDescription, dispatchOperation.Formatter);
         }
 
         public void Validate(OperationDescription operationDescription)
