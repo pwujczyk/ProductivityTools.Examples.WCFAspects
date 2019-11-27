@@ -30,7 +30,7 @@ namespace ProductivityTools.Examples.WCFAspects.Server
                 {
                     foreach (var operation in endpoint.Contract.Operations)
                     {
-                        operation.OperationBehaviors.Add(new ClientJsonDateFormatter());
+                        operation.OperationBehaviors.Add(new ClientJsonDateFormatterBehavior());
                     }
                     endpoint.Behaviors.Add(new WebHttpBehavior());
                 }

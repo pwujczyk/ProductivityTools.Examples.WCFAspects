@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/7739245/after-enable-idispatchmessageformatter-i-see-nullable-parameters-in-service/52122422#52122422
+https://stackoverflow.com/questions/25894068/change-the-json-datetime-serialization-in-wcf-4-0-rest-service/52064633#52064633
+https://stackoverflow.com/questions/40497168/wcf-service-to-expose-part-of-a-web-api/51881164#51881164

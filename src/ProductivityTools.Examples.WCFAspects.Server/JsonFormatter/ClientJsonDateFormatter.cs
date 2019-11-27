@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ProductivityTools.Examples.WCFAspects.Server.JsonFormatter
 {
-    public class ClientJsonDateFormatter : IOperationBehavior
+    public class ClientJsonDateFormatterBehavior : IOperationBehavior
     {
         public void AddBindingParameters(OperationDescription operationDescription, BindingParameterCollection bindingParameters)
         {
